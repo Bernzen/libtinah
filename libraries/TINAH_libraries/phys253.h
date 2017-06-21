@@ -24,14 +24,14 @@
 
 //setup the variables and classes used throughout phys 253.
 
-const LiquidCrystal LCD(26,27,28,16, 17, 18, 19,20,21,22,23);
+extern LiquidCrystal LCD;
 
 
-const motorClass motor ;
+extern motorClass motor ;
 
-const ServoTINAH RCServo0;    // declare variables for up to eight servos.   Replaced old Servo253 implementation 2015Jan2
-const ServoTINAH RCServo1; 
-const ServoTINAH RCServo2;
+extern ServoTINAH RCServo0;    // declare variables for up to eight servos.   Replaced old Servo253 implementation 2015Jan2
+extern ServoTINAH RCServo1; 
+extern ServoTINAH RCServo2;
 
 
 int knob(int value) ;	//	{ return analogRead(knobInput[value]) ;}
