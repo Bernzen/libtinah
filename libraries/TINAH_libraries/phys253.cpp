@@ -9,10 +9,8 @@ LiquidCrystal LCD(26,27,28,16, 17, 18, 19,20,21,22,23);
 motorClass motor ;
 
 ServoTINAH RCServo0;    // declare variables for up to eight servos.   Replaced old Servo253 implementation 2015Jan2
-ServoTINAH RCServo1; 
+ServoTINAH RCServo1;
 ServoTINAH RCServo2;
-
-
 
 int knob(int value) 		{ return analogRead(knobInput[value]) ;}
 void buzzer	(int value) { return ;} //   pulseOut(buzzerOutput, value*2) ;}
@@ -44,11 +42,11 @@ int  portRead(int portval) {
      else
      {tempState = 0;}
    //  Serial.print(tempState) ;
-     
+
      tempTotal = tempTotal + tempState * interimVal ;
 //     Serial.print(' ') ;
 //     Serial.print (interimVal) ;
-     interimVal =  interimVal * 2 ; 
+     interimVal =  interimVal * 2 ;
 //     Serial.print(' ') ;
 //     Serial.print(tempTotal) ;
      }
