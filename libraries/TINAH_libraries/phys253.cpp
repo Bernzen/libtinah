@@ -12,15 +12,6 @@ ServoTINAH RCServo0;    // declare variables for up to eight servos.   Replaced 
 ServoTINAH RCServo1;
 ServoTINAH RCServo2;
 
-portMode(0, INPUT) ;      //   ***** from 253 template file
-portMode(1, INPUT) ;      //   ***** from 253 template file
-
-LCD.begin(16,2) ;
-
-RCServo0.attach(RCServo0Output) ;    // attaching the digital inputs to the RC servo pins on the board.
-RCServo1.attach(RCServo1Output) ;
-RCServo2.attach(RCServo2Output) ;
-
 int knob(int value) 		{ return analogRead(knobInput[value]) ;}
 void buzzer	(int value) { return ;} //   pulseOut(buzzerOutput, value*2) ;}
 void buzzerOff () 	    { return ;} //   pulseStop(buzzerOutput ) ;}
